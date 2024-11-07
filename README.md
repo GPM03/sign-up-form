@@ -1,2 +1,1 @@
-# sign-up-form
-This is a sign-up form for an imaginary service
+This is a project from The Odin Project to learn how to make and style forms.
