@@ -16,32 +16,32 @@
     <main>
         <p>Sign up <em>now</em> to get unlimited knowledge about <strong>anything</strong> you can imagine.</p>
         <p>You <em>know</em> you want to.</p>
-        <form>
+        <form action="#" method="POST">
             <div class="flex-container">
                 <h2>Let's do this!</h2>
                 <div>
-                    <label name="first_name">FIRST NAME</label>
-                    <input type="text" name="first_name">
+                    <label name="first_name">FIRST NAME*</label>
+                    <input type="text" name="first_name" placeholder="Joe" required>
                 </div>
                 <div>
-                    <label name="last_name">LAST NAME</label>
-                    <input type="text" name="last_name">
+                    <label name="last_name">LAST NAME*</label>
+                    <input type="text" name="last_name" placeholder="Doe" required>
                 </div>
                 <div>
-                    <label name="email">E-MAIL</label>
-                    <input type="email" name="email">
+                    <label name="email">E-MAIL*</label>
+                    <input type="email" name="email" placeholder="email@example.com" required>
                 </div>
                 <div>
                     <label name="phone_number">PHONE NUMBER</label>
-                    <input type="tel" name="phone_number">
+                    <input type="tel" placeholder="(99)99999-9999" name="phone_number">
                 </div>
                 <div>
-                    <label name="password">PASSWORD</label>
-                    <input type="password" name="password">
+                    <label name="password">PASSWORD*</label>
+                    <input type="password" name="password" placeholder="Must be 5-20 characters long" minlength="5" maxlength="20" required>
                 </div>
                 <div>
-                    <label name="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm_password">
+                    <label name="confirm_password">CONFIRM PASSWORD*</label>
+                    <input type="password" name="confirm_password" placeholder="Must be 5-20 characters long" minlength="5" maxlength="20" required>
                 </div>
             </div>
             <button type="submit">Create account</button>

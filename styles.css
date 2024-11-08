@@ -92,6 +92,25 @@ label {
 
 input {
     display: block;
+    border: 1px solid gray;
+    padding: 0.2rem;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    box-shadow: 0 0 5px 1px blue;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid greenyellow;
+}
+
+input:placeholder-shown {
+    border: 1px solid gray;
 }
 
 button {
