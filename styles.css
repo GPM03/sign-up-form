@@ -9,7 +9,6 @@
 }
 
 html {
-    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,8 +17,7 @@ body {
     background-image: url("materials/luke-tanis-unsplash.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
 }
 
 header {
@@ -35,7 +33,7 @@ header {
     position: fixed;
     top: 50%;
     transform: translate(0, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;
 }
 
@@ -58,13 +56,13 @@ main {
     float: right;
     width: 70%;
     max-height: fit-content;
-    min-height: 100%;
+    min-height: 100vh;
     background-color: rgb(223, 188, 165);
-    padding: 3rem 0 0 0;
+    padding: 3rem 0 1rem 0;
 }
 
 p {
-    margin: 0 0 1.5rem 3rem;
+    margin: 0 3rem 1.5rem 3rem;
 }
 
 .flex-container {
@@ -123,6 +121,7 @@ button {
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
+    text-wrap: nowrap;
 }
 
 button:active {
@@ -132,4 +131,39 @@ button:active {
 a {
     color: brown;
     text-decoration: none;
+}
+
+@media screen and (max-width: 46.875rem) {
+    header {
+        display: block;
+        width: 100%;
+        float: none;
+        height: 10rem;
+    }
+
+    .logo-container {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        align-items: center;
+    }
+
+    main {
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
+    button {
+        margin: 2rem auto;
+        display: block;
+
+    }
+
+    .login {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
