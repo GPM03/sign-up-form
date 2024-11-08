@@ -4,46 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo-contaienr">
-            <h1 class="logo">Odin</h1>
+        <div class="logo-container">
+            <img class=logo-img src="materials/odin-lined.png">
+            <h1 class="logo-txt">ODIN</h1>
         </div>
     </header>
     <main>
         <p>Sign up <em>now</em> to get unlimited knowledge about <strong>anything</strong> you can imagine.</p>
         <p>You <em>know</em> you want to.</p>
         <form>
-            <div>
+            <div class="flex-container">
                 <h2>Let's do this!</h2>
                 <div>
-                    <label name="first_name">First Name:</label>
+                    <label name="first_name">FIRST NAME</label>
                     <input type="text" name="first_name">
                 </div>
                 <div>
-                    <label name="last_name">Last Name:</label>
+                    <label name="last_name">LAST NAME</label>
                     <input type="text" name="last_name">
                 </div>
                 <div>
-                    <label name="email">E-mail:</label>
+                    <label name="email">E-MAIL</label>
                     <input type="email" name="email">
                 </div>
                 <div>
-                    <label name="phone_number">Phone number:</label>
+                    <label name="phone_number">PHONE NUMBER</label>
                     <input type="tel" name="phone_number">
                 </div>
                 <div>
-                    <label name="password">Password</label>
+                    <label name="password">PASSWORD</label>
                     <input type="password" name="password">
                 </div>
                 <div>
-                    <label name="confirm_password">Confirm password:</label>
+                    <label name="confirm_password">CONFIRM PASSWORD</label>
                     <input type="password" name="confirm_password">
                 </div>
             </div>
             <button type="submit">Create account</button>
-            <span>Already have an account?<a href="#">Log in</a></span>
+            <p>Already have an account? <a href="#">Log in</a></p>
         </form>
     </main>
 </body>
