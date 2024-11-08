@@ -52,6 +52,24 @@ header {
     font-size: 3rem;
 }
 
+.credit {
+    color: white;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 30%;
+    margin: 0 0 1rem 0;
+    
+}
+
+.credit a {
+    color: white;
+    font-weight: bold;
+
+}
+
 main {
     float: right;
     width: 70%;
@@ -135,7 +153,6 @@ a {
 
 @media screen and (max-width: 46.875rem) {
     header {
-        display: block;
         width: 100%;
         float: none;
         height: 10rem;
@@ -148,6 +165,11 @@ a {
         right: 50%;
         transform: translate(50%, -50%);
         align-items: center;
+    }
+
+    .credit {
+        width: 100%;
+        position: absolute;
     }
 
     main {
